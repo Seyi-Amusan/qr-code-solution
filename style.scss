@@ -1,0 +1,45 @@
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+}
+
+.container{
+    @include flex;
+    height: 90%;
+    width: 32%;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(0,0,0,.3);
+
+    &__img-box{
+        flex-basis: 65%;
+        margin: 15px;
+        border-radius: inherit;
+        background-image: url(images/image-qr-code.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__text-box{
+        @include flex;
+        margin: 15px;
+        text-align: center;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    &__heading{
+        color: hsl(218, 44%, 22%);
+        font-size: 15px;
+    }
+
+    &__paragraph{
+        color: hsl(218, 44%, 22%);
+    }
+
+}
