@@ -18,7 +18,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .container__img-box {
-  flex-basis: 65%;
+  flex-basis: 75%;
   margin: 15px;
   border-radius: inherit;
   background-image: url(images/image-qr-code.png);
